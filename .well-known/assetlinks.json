@@ -1,0 +1,14 @@
+[
+    {
+        "relation": [
+            "delegate_permission/common.handle_all_urls"
+        ],
+        "target": {
+            "namespace": "com.xdeal",
+            "package_name": "com.xdeal",
+            "sha256_cert_fingerprints": [
+                "8E:DC:AA:9F:59:6A:60:5C:50:94:81:61:D5:EA:2A:44:FA:70:E3:50:3B:EC:89:53:55:9C:87:B9:F5:72:03:98"
+            ]
+        }
+    }
+]
