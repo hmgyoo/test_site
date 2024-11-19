@@ -1,46 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirect Button</title>
+    <title>Xure Deal Item</title>
+    
+    <!-- Meta tags for Instagram Story deep linking -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="View on Xure Deal" />
+    <meta property="og:description" content="Check out this item on Xure Deal" />
+    <meta property="og:image" content="https://example.com/path-to-your-logo.png" />
+    
+    <!-- Instagram/Facebook specific tags -->
+    <meta property="al:ios:url" content="xuredeal:/share_item/" />
+    <meta property="al:ios:app_store_id" content="6463198157" />
+    <meta property="al:ios:app_name" content="Xure" />
+    
+    <meta property="al:android:url" content="xuredeal:/share_item/" />
+    <meta property="al:android:package" content="com.xdeal" />
+    <meta property="al:android:app_name" content="Xure" />
+    
     <style>
-        /* Center the button on the page */
-        body,
-        html {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        body, html {
             margin: 0;
+            padding: 0;
+            min-height: 100vh;
             font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: #ffffff;
         }
-
-        /* Style for the button */
-        .redirect-button {
-            padding: 15px 30px;
-
-            font-size: 18px;
-            color: white;
-            background-color: #007bff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
         }
-
-        .redirect-button:hover {
-            background-color: #0056b3;
+        
+        .header {
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        
+        .item-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+        }
+        
+        .profile-section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .profile-picture {
+            width: 50px;
+            height: 50px;
+            border-radius: 25px;
+            margin-right: 15px;
+            border: 2px solid #CEAE7B;
+        }
+        
+        .profile-info {
+            flex: 1;
+        }
+        
+        .username {
+            color: #CEAE7B;
+            font-weight: bold;
+            margin: 0;
+        }
+        
+        .handle {
+            color: #999;
+            margin: 5px 0 0 0;
+        }
+        
+        .item-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        
+        .item-details h2 {
+            color: #CEAE7B;
+            margin: 0 0 10px 0;
+        }
+        
+        .item-details p {
+            margin: 5px 0;
+            color: #cccccc;
         }
     </style>
 </head>
-
 <body>
-
-    <!-- Button that redirects to the desired link -->
-    <a href="xuredeal:/share_item/" class="redirect-button">Go to Xure Deal</a>
-
+    <div class="container">
+        <div class="header">
+            <img src="/api/placeholder/120/120" alt="Xure Deal Logo" class="logo">
+        </div>
+        
+        <div class="item-card">
+            <div class="profile-section">
+                <img src="/api/placeholder/50/50" alt="Profile Picture" class="profile-picture">
+                <div class="profile-info">
+                    <p class="username">Display Name ✓</p>
+                    <p class="handle">@username</p>
+                </div>
+            </div>
+            
+            <img src="/api/placeholder/600/400" alt="Item Image" class="item-image">
+            
+            <div class="item-details">
+                <h2>Model Name</h2>
+                <p>Brand Name</p>
+                <p>Category</p>
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
